@@ -1,0 +1,338 @@
+/* ************************CSS変数************************** */
+:root {
+    --fast_color: #b1cee0;
+    --second_color: #007e8f;
+    --third_color: #eeaa37;
+    --font_color: white;
+}
+/* ************************共通************************** */
+img {
+    width: 100%;
+    height: auto;
+}
+main {
+    max-width: 1200px;
+    margin: auto;
+    text-align: justify;
+}
+/* ************************フォント************************** */
+body {
+    font-family: "Noto Sans JP", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    letter-spacing: 0.01em;
+}
+/* ************************ヘッダー************************** */
+
+#drawerButton {
+    display: none;
+}
+header {
+    max-width: 1200px;
+    height: 148px;
+    position: relative;
+    margin-inline: auto;
+}
+
+/* ------ヘッダーアイコン--------- */
+
+header nav ul {
+    display: flex;
+    justify-content: space-between;
+    max-width: 965px;
+    margin-inline: auto;
+    padding-top: 22px;
+    margin-bottom: 1rem;
+}
+
+header nav ul li {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-basis: 30%;
+}
+header .pc_logo {
+    /* display: block; */
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    /* align-items: center; */
+    flex-basis: 150px;
+}
+
+header .pc_logo:hover {
+    color: var(--second_color);
+    transition: all 0.3s linear;
+}
+
+header .sp_logo img {
+    margin-top: 0.3rem;
+    text-align: center;
+    width: 65px;
+    transition: all 0.3s linear;
+}
+header .sp_logo img:hover {
+    transform: translateY(-10px);
+}
+
+header .sp_logo {
+    display: none;
+}
+
+header .sp_logo:hover {
+    color: var(--second_color);
+    transition: all 0.3s linear;
+}
+
+header nav ul li p {
+    font-size: 14px;
+    margin-top: 1rem;
+    white-space: nowrap;
+}
+
+header nav ul li a {
+    /* padding: 1rem; */
+    display: block;
+    text-align: center;
+    /* width: 40vw; */
+}
+
+header nav ul li a .nav_icon {
+    color: var(--fast_color);
+}
+header nav ul li a:hover .nav_icon,
+header nav ul li a:hover p {
+    color: var(--second_color);
+    transition: all 0.3s linear;
+}
+
+/* ------------------ヘッダーアイコン終了------------------------ */
+
+/* ----------------------TOPに戻るボタン----------------------- */
+.topReturn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 80px;
+    height: 80px;
+    color: rgb(255, 255, 255);
+    background-color: var(--second_color);
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 1000;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 1rem;
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+.topReturn:hover {
+    background-color: #9cbad0;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.topReturn span {
+    font-size: 14px;
+}
+
+/* ************************メイン************************** */
+
+/* ************************フッター************************** */
+footer .footerback {
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    position: relative;
+    max-width: 1900px;
+    background-image: url(../images/footer_img.png);
+    height: 350px;
+}
+
+.footerback h1 {
+    display: flex;
+}
+footer .footer_nav {
+    position: absolute;
+    bottom: 50%;
+    transform: translateY(50%);
+    left: 98px;
+    color: white;
+    line-height: 2rem;
+}
+footer .footer_logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 20%;
+}
+footer .footer_home {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 20%;
+}
+/* ************************メディアクエリ************************** */
+/* 768px */
+@media (max-width: 768px) {
+    /* フッター */
+    footer .footer_nav {
+        left: 20px;
+    }
+    footer .footer_logo {
+        width: 40%;
+    }
+    footer .footer_home {
+        width: 30%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    header {
+        height: 0;
+    }
+
+    /* ドロワーボタン */
+    #drawerButton {
+        position: fixed;
+        top: 10px;
+        right: 16px;
+        width: 40px;
+        height: 40px;
+        display: block;
+        z-index: 1000000;
+        border-radius: 0 0 0 8px;
+    }
+
+    #drawerButton span {
+        width: 60%;
+        height: 4px;
+        display: block;
+        background-color: #484848;
+        position: absolute;
+        left: 8px;
+        transition: all 0.5s linear;
+    }
+
+    #drawerButton span:nth-child(1) {
+        top: 10px;
+    }
+
+    #drawerButton span:nth-child(2) {
+        top: 18px;
+    }
+
+    #drawerButton span:nth-child(3) {
+        bottom: 10px;
+    }
+
+    #drawerButton.close span:nth-child(1) {
+        transform: rotate(-45deg);
+        top: 18px;
+    }
+
+    #drawerButton.close span:nth-child(2) {
+        transform: scale(0);
+    }
+
+    #drawerButton.close span:nth-child(3) {
+        transform: rotate(45deg);
+        bottom: 18px;
+    }
+
+    /* 見えないメニュー */
+    header nav ul {
+        justify-content: center;
+        flex-wrap: wrap;
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        top: -150vh;
+        background-color: rgb(94, 190, 217, 0.9);
+        transition: all 0.5s linear;
+        z-index: 100000;
+    }
+
+    header .sp_logo {
+        display: block;
+        text-align: center;
+    }
+
+    header ul li .sp_logo {
+        width: 200px;
+        height: 200px;
+    }
+
+    header .pc_logo {
+        display: none;
+    }
+    header nav #menu.open {
+        top: 0;
+    }
+
+    header nav ul li a {
+        width: 40vw;
+    }
+
+    header nav ul li {
+        color: white;
+    }
+    header nav ul li a .nav_icon {
+        color: white;
+    }
+}
+
+@media (max-width: 450px) {
+    /* トップに戻るボタン */
+    .topReturn {
+        display: none;
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        width: 80px;
+        height: 80px;
+        color: rgb(255, 255, 255);
+        background-color: var(--second_color);
+        border-radius: 50%;
+        cursor: pointer;
+        z-index: 1000;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        font-size: 1rem;
+        border: none;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    }
+    .topReturn:hover {
+        color: rgb(255, 255, 255, 0);
+        background-color: initial;
+        box-shadow: none;
+    }
+
+    .topReturn span {
+        font-size: 14px;
+    }
+
+    /* フッター */
+    footer .footer_nav {
+        line-height: 1.5rem;
+        font-size: 12px;
+    }
+    footer .footer_logo {
+        top: 20%;
+        left: 70%;
+        width: 50%;
+    }
+    footer .footer_home {
+        width: 50%;
+    }
+}

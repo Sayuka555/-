@@ -1,0 +1,367 @@
+/* ************************CSS変数************************** */
+:root {
+    --fast_color: #b1cee0;
+    --second_color: #007e8f;
+    --third_color: #eeaa37;
+    --font_color:white;
+}
+/* ************************共通************************** */
+img {
+    width: 100%;
+    height: auto;
+}
+main {
+max-width: none;
+    margin: auto;
+}
+/* ************************フォント************************** */
+body {
+    font-family: "Noto Sans JP", sans-serif; 
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    color: #484848;
+}
+
+/* 一番上のアイコン */
+#citypage .citypage_icon{
+    width: 200px;
+    height: 200px;
+padding-top: 164px;
+margin: 0 auto;
+}
+/* アイコンのテキスト */
+#citypage .icon_text{
+    font-size: 16px;
+display: block;
+    /* margin: 0 auto; */
+}
+#citypage .sec01{
+    width: 917px;
+}
+/* 住みやすい住環境を目指して */
+#citypage .sec01_top{
+    font-size: 36px;
+    font-weight: bold;
+    display: block;
+    margin: 414px auto 0 auto;
+    text-align: center;
+    background-color:var(--fast_color);
+    max-width:531px ;
+    height: 116px ;
+    padding-top: 40px;
+    border: var(--fast_color) solid 1px;
+    border-radius: 50px 0 50px 0;
+    color: #484848;
+}
+
+#citypage .topic01{
+    max-width:917px ;
+    margin: 0 auto;
+    padding: 0 12px;
+}
+#citypage .topic01_text{
+    text-align: center;
+    font-weight: bold;
+    font-size: 24px;
+    margin-top: 70px;
+    margin-bottom: 70px;
+}
+#citypage .topic01_text02{
+    text-align: center;
+    padding: 0 12px;
+}
+#citypage .topic01_text02 p{
+    font-size: 20px;
+    line-height: 2rem
+}
+
+#citypage .topic01_text02 p span{
+    font-weight: bold;
+    font-size: 24px;
+    background:linear-gradient(transparent 60%,#FCEED7 60%);
+}
+/* 切土とはのフレックスボックス */
+#citypage .city_kirido{
+
+margin: 80px 0;
+display: flex;
+align-items: center;
+justify-content: space-between;
+
+}
+#citypage .city_kirido .kirido_images{
+    max-width: 100%;
+    object-fit: contain; /* 画像が親要素に収まるように調整 */
+    flex-basis: 45%;
+
+}
+
+
+
+#citypage .city_kirido h2 span{
+font-weight: bold;
+font-size: 24px;
+align-items: center;
+background:linear-gradient(transparent 60%,#FCEED7 60%)
+
+}
+#citypage .city_kirido h2{
+    margin-bottom: 12px;
+    padding: auto 0;
+}
+#citypage .city_kirido_text{
+    flex-basis: 45%;
+}
+/* 盛土とはのフレックスボックス */
+#citypage .city_morido {
+    margin: 80px 0;
+    display: flex;
+    align-items: center; /* 垂直方向の整列 */
+    justify-content: space-between; /* 水平方向の間隔を開ける */
+}
+
+#citypage .morido_images {
+    /* max-height: 320px;  */
+    object-fit: contain; 
+    flex-basis: 45%;
+}
+
+#citypage .city_morido_text {
+    flex-basis: 45%;
+}
+
+#citypage .city_morido_text h2 span {
+    font-weight: bold;
+    font-size: 24px;
+    background: linear-gradient(transparent 60%, #FCEED7 60%);
+}
+
+#citypage .city_morido_text h2 {
+    margin-bottom: 12px;
+}
+
+    #citypage .city_all{
+    display: flex;
+    justify-content: space-between;
+}
+#citypage .city_takuji{
+    flex-basis: 45%;
+    object-fit: contain;
+}
+#citypage .city_topicimage{
+    flex-basis: 45%;
+    object-fit: contain;
+}
+
+/* まちづくりトピックスのセクション１のラストの文章 */
+#citypage .city_lasttext{
+    font-size:24px ;
+    font-weight: bold;
+    text-align: center;
+    height: 200px;
+    line-height: 50px;
+    color: #484848;
+    margin-top: 110px;
+
+}
+#citypage .city_sec02{
+margin: 300px auto;
+max-width: 1200px;
+position: relative; /* 擬似要素を使うために親要素にpositionを設定 */
+background-image:url(../images/citytopic_asagimadara.svg) ;
+background-repeat: no-repeat;
+background-position: left 40%;
+background-size: 200px ;
+}
+
+/* すべての住民が関心を寄せる話題のひとつが、、 */
+#citypage .city_sec02 .hiyou{
+   margin: 100px 0;
+}
+
+#citypage .question01{
+    margin: 60px 0;
+}
+#citypage .question02{
+    margin: 47px 0;
+}
+#citypage .question03{
+    margin: 47px 0;
+}
+/* h２の共通 */
+#citypage .city_sec02 h2{
+    background-color: var(--fast_color);
+    font-size: 40px;
+    font-weight: bold;
+max-width: 531px;
+    height: 116px;
+    margin: 0 auto;
+    border: var(--fast_color) solid 1px;
+    border-radius: 50px 0 50px 0;
+    color: #484848;
+text-align: center;
+display: block;
+padding: 38px 0;
+}
+/* 全てのテキストを真ん中に */
+#citypage .city_sec02 h3,p{
+display: block;
+margin: 80px auto;
+width: fit-content;
+}
+/* 文字の上下の行間 */
+/* #citypage .city_sec02 p{
+    display: block;
+    font-size: 20px;
+width: fit-content;
+margin: 20px auto;
+} */
+#citypage .city_sec02 h3{
+    font-size: 24px;
+    font-weight: bold;
+}
+/* 強調部分 */
+#citypage .city_sec02 h3 span{
+    font-size: 32px;
+}
+#citypage .city_sec02 p span{
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 32px;
+}
+#citypage .finaltext{
+font-size: 16px;
+    line-height: 50px;
+    margin: 0 auto;
+    width: fit-content;
+
+}
+
+/* 追加要素 */
+.question{
+    margin: 60px 0;
+}
+
+
+/* メディアクエリ */
+@media (max-width: 836px){
+
+    #citypage .city_sec02 p span{
+        font-size: 20px;
+    }
+    #citypage .city_sec02{
+        margin: 130px 12px ;
+    }
+    #citypage .city_kirido{
+    flex-direction: column; }
+        #citypage .city_morido{
+flex-direction: column-reverse;
+align-items: center;
+            }
+            .city_kirido_text,.city_morido_text{
+                text-align: center;}
+                #citypage .city_sec02{
+                    background-color:rgba(255,255,255,0.8);
+background-blend-mode:lighten;
+                }
+                #citypage .city_all{
+display: block;
+margin: 0 auto;
+max-width: 650px;
+
+
+                }
+                #citypage .city_topicimage{
+          margin-top: 50px;
+                }
+                #citypage .sec01_top{
+                    font-size: 32px;
+            
+                }
+ 
+                #citypage .city_topicimage{
+                    max-height: auto; 
+                    object-fit: contain;
+                }
+                #citypage .city_takuji{
+                    max-height: auto; 
+                }
+                #citypage .city_sec02 h2,h3,p{
+           font-size: 20px;
+                 } 
+                 #citypage .topic01_text02 p{
+                    font-size: 18px;
+                    line-height: 2rem
+                }              
+            
+}
+
+@media (max-width: 450px){
+    #citypage .city_sec02 h2,h3,p{
+        font-size: 16px;
+    }
+    #citypage .sec01_top{
+        font-size: 24px;
+        padding-top: 40px;
+    }
+    
+    #citypage .city_sec02 h2{
+        font-size: 20px;
+        max-width: 250px;
+        padding-top: 40px;
+        height: 116px;
+    }
+    #citypage .topic01_text{
+        font-size: 20px;
+        margin-top: 75px;
+    }
+    #citypage .topic01_text02 p span{
+        font-size: 20px;
+    }
+    #citypage .city_kirido h2 span{
+        font-weight: bold;
+        font-size: 20px;
+        
+        }
+        #citypage .city_morido_text h2 span {
+            font-size: 20px;
+        }
+        #citypage .city_lasttext{
+            font-size: 20px;
+        }
+        #citypage .city_sec02 h3{
+            font-size: 16px;
+        }
+        #citypage .city_sec02 h3 span{
+            font-size: 20px;
+        }
+        #citypage .city_sec02 .hiyou{
+            margin-top: 80px;
+        }
+        #citypage .city_sec02 p {
+font-size: 16px;
+        }
+        #citypage .city_sec02 p span {
+font-size: 20px;
+                    }
+                    #citypage .city_all{
+                        margin: 0 16px;
+                    } 
+                    #citypage .city_sec02 span{
+                        font-size: 20px;
+                        font-weight: bold;
+                        line-height: 32px;
+                    }
+                   
+                    #citypage .city_sec02 p span{
+                        font-size: 18px;}
+                        #citypage .topic01_text02 p{
+                            font-size: 16px;
+                        } 
+}
+@media (max-width: 360px){
+    .wrapper_h2mark h2{
+font-size: 20px;
+    }
+}

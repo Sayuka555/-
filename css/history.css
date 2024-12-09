@@ -1,0 +1,716 @@
+/* GoogleFonts */
+@import url("https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@400;700&family=Rubik:wght@300..900&display=swap");
+
+/***************** CSS変数 ********************/
+html {
+    scroll-behavior: smooth;
+}
+
+:root {
+    --fast_color: #b1cee0;
+    --second_color: #007e8f;
+    --third_color: #eeaa37;
+    --font_color: #484848;
+}
+
+/* main {
+    max-width: 1200px;
+    margin: auto;
+} */
+
+/***************** commons ********************/
+
+#historypage body {
+    color: var(--font_color);
+    width: 100%;
+}
+
+#historypage img {
+    max-width: 100%;
+    height: auto;
+}
+
+/*****************フォント ********************/
+
+#historypage body {
+    font-family: "Noto Sans JP", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    scroll-behavior: smooth;
+}
+
+/***************** main ********************/
+
+/**** 年表 ****/
+
+#historypage main .history_images {
+    max-width: 1000px;
+    /* height: 400px; */
+    margin-top: 100px;
+    margin-inline: auto;
+}
+
+#historypage .historypage_icon {
+    margin: 80px auto;
+    /* margin-top: 30%; */
+    width: 200px;
+    aspect-ratio: 1/1;
+}
+
+/* <!---------------------昔の本----------------------> */
+
+#historypage .history_book {
+    width: 80%;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    margin-inline: auto;
+    text-align: center;
+}
+
+#historypage .history_book p span {
+    font-size: 1.3rem;
+    font-weight: 400;
+    text-shadow: 1px 1px 2px rgba(75, 75, 75, 0.5);
+}
+
+#historypage .history_book .book_img {
+    margin-top: 1rem;
+}
+
+#historypage .history_book .book_img img {
+    height: 200px;
+    width: auto;
+}
+
+#historypage .book_01 .pdf_icon img,
+#historypage .book_02 .pdf_icon img,
+#historypage .book_03 .pdf_icon img {
+    width: 20px;
+    aspect-ratio: 1/1;
+}
+
+#historypage .history_book a {
+    display: inline-block;
+    font-size: 20px;
+    text-decoration: none;
+    position: relative;
+    transition: 0.3s;
+}
+#historypage .history_book a::after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    content: "";
+    width: 0;
+    height: 1px;
+    background-color: var(--second_color);
+    transition: 0.3s;
+}
+#historypage .history_book a:hover::after {
+    width: 100%;
+}
+
+#historypage .pdf_icon {
+    margin-top: 1rem;
+}
+
+#historypage .book_02 {
+    width: 40%;
+}
+
+#historypage .book_02 .pdf_box {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-inline: auto;
+}
+
+/* <!---------------------昔の本終了----------------------> */
+
+#historypage .history_button {
+    max-width: 960px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-inline: auto;
+}
+
+#historypage .history_button .button {
+    text-align: center;
+    background-color: var(--third_color);
+    color: white;
+    font-weight: bold;
+    font-size: 1.3rem;
+    width: 220px;
+    padding-block: 0.8rem;
+    border-radius: 10px;
+    margin-top: 15%;
+}
+
+/* #historypage .history_button .button:hover {
+  filter: drop-shadow(1px 2px 3px #484848);
+  transition: all 0.3s linear;
+} */
+
+#historypage .history_button .button {
+    box-shadow: 0 4px 0 rgba(75, 75, 75, 0.5);
+}
+#historypage .history_button .button:hover {
+    transform: translateY(4px);
+    transition: all 0.2s linear;
+    box-shadow: none;
+}
+
+/* ------------------------歴史---------------------------------- */
+
+#historypage {
+    #chronologySec02 {
+        margin-block-start: 15%;
+
+        .chronologyBox2 {
+            display: flex;
+            width: 100%;
+            align-items: center;
+            background-color: rgb(184, 213, 232, 0.5);
+            position: relative;
+            height: 430px;
+
+            dt {
+                font-family: "Montserrat", sans-serif;
+                text-shadow: 2px 2px 4px rgba(75, 75, 75, 0.5);
+                font-size: clamp(6rem, -3.198rem + 24.53vw, 12.5rem);
+                font-weight: bold;
+                color: white;
+                line-height: 1;
+                flex-basis: 50%;
+                text-align: center;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                .era_name {
+                    display: block;
+                    color: rgb(75, 75, 75, 0.8);
+                    font-family: "Montserrat", sans-serif;
+                    font-weight: bold;
+                    font-size: 1.5rem;
+
+                    span {
+                        color: rgb(75, 75, 75, 0.8);
+                        font-weight: bold;
+                        font-size: 3rem;
+                    }
+                }
+            }
+
+            dd {
+                flex-basis: 50%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-wrap: wrap;
+                font-size: 1.3rem;
+                padding: 1rem;
+                line-height: 1.3;
+
+                figure {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    flex-wrap: wrap;
+                    margin-top: 1rem;
+                    gap: 1rem;
+
+                    img {
+                        flex-basis: 40%;
+                        border: solid 7.5px white;
+                        border-radius: 4%;
+
+                        @media (width <=768px) {
+                            flex-basis: 25%;
+                        }
+                    }
+                }
+
+                figure:nth-child(2) {
+                    flex-direction: row-reverse;
+                }
+            }
+
+            @media (width <=768px) {
+                flex-direction: column;
+            }
+        }
+
+        .chronologyBox2:nth-child(even) {
+            flex-direction: row-reverse;
+            background-color: var(--fast_color);
+            z-index: -1;
+
+            @media (width <=768px) {
+                flex-direction: column;
+            }
+        }
+
+        .chronologyBox2.year_1970 {
+            @media (width <=768px) {
+                height: 550px;
+
+                dt {
+                    flex-basis: 40%;
+                }
+
+                dd {
+                    flex-basis: 60%;
+                }
+            }
+        }
+    }
+
+    .chronologyBox2::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        bottom: 3rem;
+        margin: auto;
+        width: 1rem;
+        height: 1rem;
+        background-color: var(--second_color);
+        border-radius: 50%;
+        z-index: 1;
+
+        @media (width <= 768px) {
+            display: none;
+        }
+    }
+
+    .chronologyBox2::after {
+        content: "";
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, 0);
+        top: 0;
+        bottom: -7px;
+        background-color: var(--second_color);
+        width: 2px;
+        height: auto;
+        z-index: -1;
+
+        @media (width <= 768px) {
+            display: none;
+        }
+    }
+
+    .chronologyBox2:first-child::after {
+        top: calc(50% - 1.5rem);
+    }
+
+    .chronologyBox2:last-child::after {
+        bottom: 50%;
+        transform: translate(-50%, -1.5rem);
+    }
+}
+
+/* -------------------------歴史終了-------------------------- */
+
+#historypage #guidance {
+    max-width: 960px;
+    border: solid 1px #484848;
+    border-radius: 20px;
+    margin-inline: auto;
+    margin-top: 15%;
+    /* margin-inline: auto; */
+}
+
+#historypage #guidance h2 {
+    text-align: center;
+    margin-inline: auto;
+    width: 480px;
+    font-size: 1.3rem;
+    font-weight: bold;
+    background-color: var(--fast_color);
+    border-radius: 50px 0 50px 0;
+    padding: 1.5rem 2.5rem;
+    margin-top: 34px;
+}
+
+#historypage #guidance .guidance_tittle {
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 34px;
+}
+
+#historypage #guidance .guidance_tittle p {
+    font-size: 0.9rem;
+}
+
+#historypage #guidance .guidance_tittle .bubble_guidance01 {
+    margin-inline-start: 55px;
+    margin-inline: auto;
+    background: url(../images/speechbubbble_left.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    padding: 50px;
+}
+
+#historypage #guidance .guidance_tittle .bubble_guidance02 {
+    margin-inline-end: 55px;
+    margin-inline: auto;
+    background: url(../images/speechbubble_right.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    padding: 50px;
+}
+
+#historypage .guidance_explanation {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 34px;
+    text-align: left;
+    padding-inline: 1rem;
+}
+
+#historypage .guidance_explanation .guidance_text p {
+    margin-top: 1rem;
+    text-align: left;
+}
+
+#historypage .guidance_explanation .guidance_text span {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+#historypage .guidance_explanation .workshop_img {
+    max-width: 30%;
+    height: auto;
+}
+
+#historypage .guidance_explanation .workshop_img figcaption {
+    text-align: right;
+    margin-block: 0.5rem;
+    font-size: 14px;
+}
+
+#historypage .guidance_explanation .workshop_img img {
+    border-radius: 5px;
+}
+
+#historypage .guidance_text02 {
+    text-align: center;
+    margin-block: 1rem;
+    padding-inline: 1rem;
+    line-height: 150%;
+}
+
+#historypage .guidance_text02 span {
+    font-size: 2rem;
+    font-weight: bold;
+    background: linear-gradient(transparent 60%, var(--third_color) 60%);
+}
+
+/***************** footer ********************/
+
+#historypage footer {
+    background-color: var(--main_color);
+    /* padding-block: 1rem; */
+    margin-top: 15rem;
+}
+
+#historypage footer p {
+    text-align: center;
+}
+
+/*-----------------レスポンシブ-------------- */
+@media (max-width: 1000px) {
+    #historypage #chronologySec02 dl .chronologyContainer .chronologyBox dt {
+        font-size: 10rem;
+    }
+
+    #historypage
+        #chronologySec02
+        dl
+        .chronologyContainer
+        .chronologyBox
+        dt
+        > span {
+        font-size: 1rem;
+    }
+
+    #historypage
+        #chronologySec02
+        dl
+        .chronologyContainer
+        .chronologyBox
+        dt
+        span
+        span {
+        font-size: 2.5rem;
+    }
+
+    #historypage #chronologySec02 dl .chronologyContainer .chronologyBox dd {
+        margin-top: 1rem;
+    }
+
+    #historypage #guidance {
+        margin-inline: 1rem;
+    }
+
+    #historypage #guidance h2 {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 780px) {
+    #historypage .history_book .uzuyu_bookimg .book_img img {
+        width: auto;
+        height: 150px;
+    }
+
+    #historypage #guidance h2 {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    #historypage .history_book {
+        align-items: center;
+        flex-direction: column;
+        gap: 3rem;
+    }
+
+    #historypage .chronologyBox2::before,
+    #historypage .chronologyBox2::after {
+        display: none;
+    }
+
+    /* #historypage .history_button .button {
+        margin-top: 90px;
+    } */
+
+    #historypage
+        #chronologySec02
+        dl
+        .chronologyContainer:nth-child(even)
+        .chronologyBox {
+        flex-direction: column;
+    }
+    #historypage #chronologySec02 dl .chronologyContainer.year_1970 {
+        height: 550px;
+    }
+
+    #historypage #chronologySec02 .chronologyBox2.year_1975 {
+        height: 600px;
+    }
+
+    #historypage
+        #chronologySec02
+        dl
+        .chronologyContainer
+        .chronologyBox
+        figure
+        img {
+        flex-basis: 30%;
+    }
+
+    #historypage #chronologySec02 dl .chronologyContainer .chronologyBox {
+        flex-direction: column;
+    }
+
+    #historypage #guidance .guidance_tittle .bubble_guidance01 {
+        margin-inline-start: 44px;
+        padding: 50px;
+    }
+
+    #historypage #guidance .guidance_tittle .bubble_guidance02 {
+        margin-inline-end: 44px;
+        padding: 50px;
+    }
+
+    #historypage #guidance .guidance_tittle {
+        flex-direction: column;
+    }
+
+    #historypage .guidance_explanation .workshop_img {
+        max-width: 40%;
+    }
+
+    #historypage .guidance_explanation .guidance_text span {
+        font-size: 22px;
+    }
+    #historypage .guidance_text02 span {
+        font-size: 26px;
+    }
+}
+@media (max-width: 600px) {
+    #historypage main .history_images {
+        margin-top: 0;
+    }
+
+    header {
+        position: absolute;
+        height: 0;
+    }
+
+    #historypage .book_02 {
+        width: 50%;
+    }
+}
+
+@media (max-width: 550px) {
+    #historypage .history_book .uzuyu_bookimg .book_img img {
+        width: auto;
+        height: 120%;
+    }
+
+    #historypage .history_book .uzuyu_bookimg .book_img .uzuyu_img {
+        width: 200px;
+        height: 100%;
+    }
+
+    #historypage .history_book a {
+        font-size: 18px;
+    }
+
+    #historypage #guidance h2 {
+        width: 80%;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 440px) {
+    #historypage .history_book a {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 500px) {
+    #historypage #chronologySec02 dl .chronologyContainer .chronologyBox dt {
+        font-size: 8rem;
+    }
+
+    #historypage .book_02 {
+        width: 50%;
+    }
+}
+
+@media (max-width: 375px) {
+    #historypage .historypage_icon {
+        width: 40%;
+    }
+
+    #historypage .history_button .button {
+        margin-top: 2rem;
+        margin-top: 20%;
+        /* width: 10rem; */
+        font-size: 20px;
+    }
+
+    #historypage #chronologySec02 dl .chronologyContainer .chronologyBox dt {
+        font-size: 6rem;
+    }
+
+    #historypage #chronologySec02 .chronologyBox2 dd {
+        font-size: 18px;
+        line-height: 1.3;
+    }
+
+    #historypage #chronologySec02 .chronologyBox2 dd figure img {
+        flex-basis: 50%;
+    }
+
+    /* ----------------------------------------------------------------------------- */
+
+    #historypage #guidance .guidance_tittle .bubble_guidance01 {
+        margin-inline-start: 33px;
+        padding: 40px;
+    }
+
+    #historypage #guidance h2 {
+        font-size: 24px;
+    }
+
+    #historypage .guidance_explanation .guidance_text span {
+        font-size: 20px;
+    }
+    #historypage .guidance_explanation .workshop_img {
+        max-width: 70%;
+    }
+
+    #historypage .guidance_text02 {
+        font-size: 18px;
+    }
+
+    #historypage .guidance_text02 span {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 360px) {
+    #historypage .history_book p span {
+        font-size: 20px;
+    }
+
+    #historypage #chronologySec02 .chronologyBox2 dd .text_quotation {
+        font-size: 14px;
+    }
+
+    #historypage #chronologySec02 .chronologyBox2 {
+        height: 300px;
+    }
+
+    #historypage #chronologySec02 .chronologyBox2.year_1974 {
+        height: 400px;
+    }
+
+    #historypage #chronologySec02 .chronologyBox2.year_1997 {
+        height: 400px;
+    }
+
+    #historypage #chronologySec02 .chronologyBox2 dt .era_name {
+        font-size: 20px;
+    }
+
+    #historypage #chronologySec02 .chronologyBox2 dt .era_name span {
+        font-size: 40px;
+    }
+
+    #historypage #guidance .guidance_tittle .bubble_guidance01 {
+        margin-inline-start: -20px;
+        padding: 45px;
+        font-size: 14px;
+    }
+
+    #historypage #guidance .guidance_tittle .bubble_guidance02 {
+        margin-inline-end: 0px;
+        padding: 45px;
+        font-size: 14px;
+    }
+
+    #historypage #guidance h2 {
+        width: 90%;
+        font-size: 20px;
+        font-weight: 600;
+    }
+
+    #historypage .guidance_explanation .guidance_text p {
+        line-height: 1.25;
+    }
+
+    #historypage .guidance_explanation .guidance_text span {
+        font-weight: 600;
+    }
+
+    #historypage .guidance_explanation .workshop_img {
+        margin-top: 1rem;
+    }
+}

@@ -1,0 +1,529 @@
+img {
+    width: 100%;
+    height: 100%;
+}
+
+main {
+    max-width: none;
+    text-align: justify;
+}
+
+.back_img {
+    background-image: url(../images/meeting_backimg.png);
+    background-position: 50% 0;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: #b8d5e8;
+    margin-top: 104px;
+    padding-top: 156px;
+}
+.back_color {
+    max-width: 965px;
+    margin-inline: auto;
+    padding-inline: 2rem;
+}
+
+.meeting_tittle {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.meeting_icon {
+    max-width: 200px;
+    max-height: 200px;
+    margin: 0 auto;
+    margin-top: 164px;
+}
+
+.meeting_tittle p {
+    width: fit-content;
+    margin: 0 auto;
+    margin-top: 34px;
+}
+
+.meeting_sec01 p,
+.meeting_sec02 p {
+    max-width: 750px;
+    padding-inline: 1rem;
+}
+
+.meeting_sec01 {
+    /* margin-inline: 5rem; */
+    max-width: 965px;
+    margin-inline: auto;
+}
+
+.meeting_sec01 .meeting_about {
+    background-color: white;
+    border-radius: 10px;
+    padding-block: 60px;
+}
+
+.meeting_about p {
+    font-size: 16px;
+    /* line-height: 36px; */
+    width: fit-content;
+    margin-inline: auto;
+    letter-spacing: 0.05em;
+    text-align: justify;
+}
+
+.meeting_about .about_space {
+    padding-top: 28px;
+}
+
+.meeting_about p span {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* 以下、セクション2 */
+.meeting_sec02 {
+    /* max-width: 90%; */
+    max-width: 965px;
+    margin-inline: auto;
+    margin-top: 145px;
+    background-color: white;
+    border-radius: 10px;
+    padding-top: 90px;
+    padding-bottom: 105px;
+}
+
+.meeting_sec02_widthadj {
+    max-width: 750px;
+    margin-inline: auto;
+}
+.bubble_purpose {
+    width: fit-content;
+    margin-inline: 0 auto;
+    background: url(../images/meeting_bubble1.png);
+    background-repeat: no-repeat;
+    padding-block: 39px;
+    padding: 39px 112.5px 65px 112.5px;
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.meeting_sec02 p {
+    margin-top: 16px;
+    width: fit-content;
+    margin-inline: auto;
+    letter-spacing: 4%;
+    line-height: 1.5rem;
+}
+
+.bubble_explan {
+    width: fit-content;
+    margin-inline: auto 0;
+    margin-top: 90px;
+    background: url(../images/meeting_bubble2.png);
+    background-repeat: no-repeat;
+    padding: 39px 112.5px 65px 112.5px;
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.orgchart_img {
+    max-width: 500px;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 60px;
+}
+
+/* 以下、sec03 */
+.meeting_sec03 {
+    /* max-width: 965px; */
+    margin-inline: auto;
+    margin-top: 145px;
+}
+
+.sec03_explan_text {
+    max-width: 965px;
+    margin-inline: auto;
+}
+.meeting_sec03 p {
+    width: fit-content;
+    background-color: white;
+    padding-block: 32px;
+    border-radius: 10px;
+    padding-inline: 20px;
+}
+
+.sec03_back01 {
+    /* background-color: white; */
+    margin-top: 25px;
+    /* padding-top: 100px;
+    padding-bottom: 100px; */
+    height: 160px;
+    width: 100%;
+    background-image: url(../images/meeting_sec03_back10.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 0;
+}
+
+.sec03_backcolor {
+    background-color: white;
+    /* background-image: url(../images/meeting_sec03_back03.png);
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    background-size: contain;　*/
+}
+
+/* お祭りやイベント写真 */
+/* .sec03_photos img {
+    height: 300px;
+    width: auto;
+} */
+
+.sec03_photos {
+    max-width: 965px;
+    margin-inline: auto;
+
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+
+.sec03_photos_1,
+.sec03_photos_2,
+.sec03_photos_3,
+.sec03_photos_4 {
+    height: 300px;
+    width: auto;
+}
+
+.sec03_photos_1and2 {
+    display: flex;
+    gap: 35px;
+}
+
+.sec03_photos_3and4 {
+    display: flex;
+    gap: 35px;
+}
+
+.sec03_back02 {
+    background-color: white;
+    /* padding-top: 100px;
+    padding-bottom: 100px; */
+    height: 200px;
+    background-image: url(../images/meeting_sec03_back11.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 0;
+}
+
+footer {
+    background-color: #b8d5e8;
+}
+
+/* positionアサギマダラと木＆鳥 */
+.butterfly_position {
+    transform: rotate(15deg);
+    max-width: 85px;
+    height: auto;
+    position: relative;
+    left: -60px;
+    top: 15px;
+}
+
+.treebird_position {
+    max-width: 194px;
+    height: auto;
+    position: relative;
+    left: 70%;
+    top: -70px;
+}
+
+/* 以下、縮めた時に両端に空白があるようにするための設定 */
+@media (max-width: 1100px) {
+    .sec01,
+    .sec02,
+    .sec03 {
+        max-width: 90%;
+    }
+}
+
+/* -----以下、タブレット版(768px)のメディアクエリ----- */
+@media (max-width: 836px) {
+    img {
+        width: 100%;
+        height: 100%;
+    }
+
+    /* .back_color {
+        margin-top: 70px;
+        padding-top: 145px;
+    } */
+    /* ここからsec01 */
+    .meeting_sec01 p,
+    .meeting_sec02 p {
+        max-width: 650px;
+    }
+
+    .meeting_sec01 {
+        max-width: 700px;
+        margin-inline: auto;
+    }
+
+    .meeting_about {
+        background-color: white;
+        border-radius: 10px;
+        padding-block: 50px;
+    }
+    /* ここからsec02 */
+    .meeting_sec02 {
+        max-width: 700px;
+        margin-inline: auto;
+        margin-top: 145px;
+        background-color: white;
+        border-radius: 10px;
+        padding-top: 87px;
+        padding-bottom: 105px;
+    }
+
+    .bubble_purpose {
+        margin-inline: auto;
+    }
+
+    .bubble_explan {
+        margin-inline: auto;
+    }
+
+    /* ここからsec03 */
+    .sec03_explan_text {
+        margin-left: 68px;
+    }
+
+    .sec03_photos_1,
+    .sec03_photos_2,
+    .sec03_photos_3,
+    .sec03_photos_4 {
+        margin: 0 auto;
+        box-shadow: 10px 10px 4px #ccc;
+        height: 300px;
+        width: auto;
+    }
+
+    .sec03_photos {
+        flex-direction: column;
+    }
+
+    .sec03_photos_1and2 {
+        flex-direction: column;
+    }
+    .sec03_photos_3and4 {
+        flex-direction: column;
+    }
+
+    .treebird_position {
+        /* max-width: 194px; */
+        height: auto;
+        position: relative;
+        left: 60%;
+        top: -60px;
+    }
+}
+
+@media (max-width: 700px) {
+    .bubble_purpose,
+    .bubble_explan {
+        width: fit-content;
+        font-size: 2rem;
+        background-size: 100%;
+        padding: 1rem;
+        padding-bottom: 2.5rem;
+    }
+}
+
+@media (max-width: 550px) {
+    .treebird_position {
+        height: auto;
+        position: relative;
+        left: 58%;
+        top: -45px;
+    }
+}
+/* -----以下、スマホ版(450px)のメディアクエリ----- */
+@media (max-width: 450px) {
+    .back_color {
+        margin-inline: auto;
+        padding-inline: 0.5rem;
+    }
+
+    .meeting_tittle {
+        max-width: 90%;
+    }
+    .meeting_about {
+        max-width: 90%;
+        margin: auto;
+        padding-inline: 1rem;
+    }
+    .meeting_about p {
+        font-size: 16px;
+        /* line-height: 1.75rem; */
+    }
+
+    .meeting_about p span {
+        font-size: 20px;
+    }
+
+    .bubble_purpose {
+        margin: 0 auto;
+    }
+    /* スマホsec02 */
+    .meeting_sec02 {
+        max-width: 90%;
+        padding-top: 3rem;
+    }
+    .meeting_sec02 .bubble_purpose {
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        font-size: 24px;
+        padding-block-start: 1.6rem;
+        /* margin: 0 auto; */
+        /* margin-inline: 1rem; */
+        /* width: fit-content; */
+        /* padding-inline: 0; */
+    }
+
+    .meeting_sec02 p {
+        margin-inline: 1rem;
+        margin-top: 0;
+    }
+    .meeting_sec02 .bubble_explan {
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        font-size: 24px;
+        padding-block-start: 1.6rem;
+        margin-top: 4rem;
+        /* margin-inline: 1rem; */
+        /* padding-inline: 0; */
+        /* margin-inline: 0 auto; */
+    }
+
+    .meeting_sec02 .orgchart_img {
+        width: 80vw;
+        height: auto;
+    }
+
+    .orgchart_img {
+        max-width: 80%;
+        height: auto;
+        margin: 0 auto;
+        margin-top: 60px;
+    }
+
+    /* sec03 */
+    .sec03_photos_1,
+    .sec03_photos_2,
+    .sec03_photos_3,
+    .sec03_photos_4 {
+        height: 200px;
+        width: 350px;
+    }
+
+    .sec03_photos_1 img,
+    .sec03_photos_2 img,
+    .sec03_photos_3 img,
+    .sec03_photos_4img {
+        object-fit: cover;
+        object-position: center;
+    }
+    /* positionの木と鳥 */
+    .treebird_position {
+        max-width: 194px;
+        height: auto;
+        position: relative;
+        left: 170px;
+        top: -35px;
+    }
+}
+
+@media (max-width: 390px) {
+    /* positionの木と鳥 */
+    .treebird_position {
+        max-width: 194px;
+        height: auto;
+        position: relative;
+        left: 155px;
+        top: -30px;
+    }
+}
+
+@media (max-width: 375px) {
+    /* sec03 */
+    .sec03_photos_1,
+    .sec03_photos_2,
+    .sec03_photos_3,
+    .sec03_photos_4 {
+        height: 200px;
+        width: 300px;
+    }
+
+    .sec03_photos_1 img,
+    .sec03_photos_2 img,
+    .sec03_photos_3 img,
+    .sec03_photos_4img {
+        object-fit: cover;
+        object-position: center;
+    }
+}
+/* @media (max-width: 360px) {
+    .meeting_sec01 {
+        padding-inline: 1rem;
+    }
+    .meeting_about {
+        max-width: 100%;
+    }
+
+    .meeting_about p {
+        font-size: 18px;
+    }
+    .meeting_about p span {
+        font-weight: 600;
+    }
+    .meeting_sec02 .bubble_purpose h2 {
+        font-weight: 600;
+        text-align: center;
+        padding-top: 2.5rem;
+    }
+    .meeting_sec02 p {
+        font-size: 18px;
+
+        margin-block: 1rem;
+    }
+    .meeting_sec02 {
+        padding-inline: 1rem;
+        padding-top: 0;
+    }
+    .bubble_explan {
+        width: auto;
+        margin-top: 15%;
+        padding-bottom: 10px;
+        text-align: center;
+    }
+    .meeting_sec02 .bubble_explan h2 {
+        font-weight: 600;
+        letter-spacing: 0.01em;
+    }
+    .bubble_purpose {
+        width: 100%;
+    }
+    .meeting_sec02 .bubble_purpose {
+        margin-inline: 0;
+        background-size: 90%;
+    }
+    .meeting_sec02 .bubble_explan h2 {
+        padding-top: 0;
+        padding-bottom: 3rem;
+    }
+   
+    .treebird_position {
+        max-width: 150px;
+        height: auto;
+    }
+} */
